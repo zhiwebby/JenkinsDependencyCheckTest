@@ -3,8 +3,8 @@ pipeline {
 	stages {
 		stage('Checkout SCM') {
 			steps {
-				git '/home/JenkinsDependencyCheckTest'
-			}
+		               git 'https://github.com/zhiwebby/JenkinsDependencyCheckTest'	
+                        }
 		}
 
 		stage('OWASP DependencyCheck') {
